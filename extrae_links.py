@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
-from util import shp2dataframe
+from utiles import shp2dataframe
 
-data = shp2dataframe('files_serie_1.dbf')
+data = shp2dataframe('./datos/files_2.dbf')
 
 for i in data['ID']:
     nombre = i + '.zip'
