@@ -1,0 +1,15 @@
+;
+; ArcView Image Information
+;
+NCOLS       1856
+NROWS       2278
+NBANDS      1
+NBITS       16
+LAYOUT      BIL
+BYTEORDER   I
+SKIPBYTES   0
+MAPUNITS    DEGREES
+ULXMAP      -68.19791189
+ULYMAP      -23.91192012
+XDIM        0.00833300
+YDIM        0.00833300
