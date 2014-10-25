@@ -6,7 +6,7 @@ from pandas import DataFrame
 from shapefile import Reader as shapefileReader
 from os.path import join
 from os import walk, remove, rmdir
-
+from osgeo import ogr
 import numpy
 
 
@@ -41,8 +41,6 @@ def procesarZIP(archivo):
     for a in z.filelist:
         if a.filename[-3:] == "dbf":
             archivo_dbf = "%s%s" % (ruta_temporal, a.filename)
-
-            print archivo_dbf
             puntos = shp2dataframe(archivo_dbf)
             # print "%s %s" % (nombre, puntos['REND'].mean())
 
@@ -50,7 +48,11 @@ def procesarZIP(archivo):
             no_nulos = filter(None, puntos.REND.values)
             promedio = promedioRendimiento(no_nulos)
 
-            print "%s,%s" % (nombre.split('/')[-1], promedio)
+        if a.filename[-3:] == "shp":
+            archivo_shp = "%s%s" % (ruta_temporal, a.filename)
+            centro_x, centro_y = obtenerCentroide(archivo_shp)
+
+    print "%s,%s,%s,%s" % (nombre.split('/')[-1], promedio, centro_x, centro_y)
 
     borrarArbol(ruta_temporal)
 
@@ -74,3 +76,25 @@ def fino(lista):
 def promedioRendimiento(lista):
     filtrados = fino(lista)
     return numpy.mean(filtrados)
+
+
+def obtenerCentroide(archivo_shape):
+    # Get a Layer
+    inDriver = ogr.GetDriverByName("ESRI Shapefile")
+    inDataSource = inDriver.Open(archivo_shape, 0)
+    inLayer = inDataSource.GetLayer()
+
+    # Collect all Geometry
+    geomcol = ogr.Geometry(ogr.wkbGeometryCollection)
+    for feature in inLayer:
+        geomcol.AddGeometry(feature.GetGeometryRef())
+
+    # Calculate convex hull
+    convexhull = geomcol.ConvexHull()
+
+    centroide = convexhull.Centroid()
+
+    # Close DataSource
+    inDataSource.Destroy()
+
+    return centroide.GetX(), centroide.GetY()
