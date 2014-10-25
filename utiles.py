@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from glob import glob
+
 from zipfile import ZipFile
 from pandas import DataFrame
 from shapefile import Reader as shapefileReader
@@ -8,8 +8,6 @@ from os.path import join
 from os import walk, remove, rmdir
 
 import numpy
-
-
 
 
 def borrarArbol(top):
@@ -76,7 +74,3 @@ def fino(lista):
 def promedioRendimiento(lista):
     filtrados = fino(lista)
     return numpy.mean(filtrados)
-
-
-for archivo in glob("serie1/*.zip"):
-    procesarZIP(archivo)
