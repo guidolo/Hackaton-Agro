@@ -1,0 +1,24 @@
+CVPrecAnual, 0.0, 0.0, 133.0
+IndiceProdSuelo, -2.443125712174544, 0.0, 255.0
+PrecTrimHumedo, 0.0, 0.0, 596.0
+PrecipAnual, 5.305301871009536, 0.0, 2020.0
+PrecipTrimMasCalido, 0.0, 0.0, 596.0
+RadiacionFotActIncidenteAnual, 14.979994765658255, 628.0, 941.0
+TemoMinMesMasFrio, -15.768211720941432, 0.0, 131.0
+TempMediaAnual, 0.0, 0.0, 235.0
+TempMesMasCalido, 0.0, 0.0, 365.0
+PrecTrimHumedo^2, -19.620962703316177, 0.0, 355216.0
+PrecipTrimMasCalido^2, -0.8406811423136205, 0.0, 355216.0
+RadiacionFotActIncidenteAnual^2, 3.4613818865167616, 394384.0, 885481.0
+TempMediaAnual^2, -35.81406600712272, 0.0, 55225.0
+TempMesMasCalido^2, 43.186118724230944, 0.0, 133225.0
+'TempMediaAnual, -12.1206988272263, 153.5, 235.0
+`TemoMinMesMasFrio, -10.959775869486034, 0.0, 24.5
+`CVPrecAnual, -9.229482368358083, 0.0, 39.5
+'TempMesMasCalido, -5.762911983536105, 314.5, 365.0
+`PrecipAnual, -10.176684599925547, 0.0, 822.5
+`TemoMinMesMasFrio, -5.137409095654088, 0.0, 25.5
+linearPredictorNormalizer, 19.701024382913705
+densityNormalizer, 52.96610232329886
+numBackgroundPoints, 10055
+entropy, 5.232734018196521

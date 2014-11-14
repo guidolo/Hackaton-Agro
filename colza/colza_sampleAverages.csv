@@ -1,0 +1,10 @@
+Predictor variable,Categorical,Sample average
+CVPrecAnual,false,40.0
+IndiceProdSuelo,false,50.0
+PrecTrimHumedo,false,284.5
+PrecipAnual,false,833.5
+PrecipTrimMasCalido,false,264.5
+RadiacionFotActIncidenteAnual,false,781.0
+TemoMinMesMasFrio,false,25.5
+TempMediaAnual,false,153.0
+TempMesMasCalido,false,313.0

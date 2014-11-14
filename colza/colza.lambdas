@@ -1,0 +1,13 @@
+CVPrecAnual, 15.433842813569758, 0.0, 133.0
+IndiceProdSuelo, -1.3552737818613463, 0.0, 255.0
+PrecTrimHumedo, 2.860636716288599, 0.0, 596.0
+PrecipAnual, 30.44625141083521, 0.0, 2020.0
+PrecipTrimMasCalido, -7.462980866369225, 0.0, 596.0
+RadiacionFotActIncidenteAnual, 0.44124613260946055, 628.0, 941.0
+TemoMinMesMasFrio, 1.0312050965766768, 0.0, 131.0
+TempMediaAnual, -62.79892170291856, 0.0, 235.0
+TempMesMasCalido, 72.63301483148254, 0.0, 365.0
+linearPredictorNormalizer, 38.84515257173834
+densityNormalizer, 140.6017671029155
+numBackgroundPoints, 10004
+entropy, 7.174745377206806

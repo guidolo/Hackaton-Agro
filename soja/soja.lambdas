@@ -1,0 +1,32 @@
+CVPrecAnual, 0.0, 0.0, 133.0
+IndiceProdSuelo, 0.0, 0.0, 255.0
+PrecTrimHumedo, 0.0, 0.0, 596.0
+PrecipAnual, 0.0, 0.0, 2020.0
+PrecipTrimMasCalido, 0.0, 0.0, 596.0
+RadiacionFotActIncidenteAnual, 0.0, 628.0, 941.0
+TemoMinMesMasFrio, 0.0, 0.0, 131.0
+TempMediaAnual, 0.0, 0.0, 235.0
+TempMesMasCalido, 0.0, 0.0, 365.0
+(37.5<CVPrecAnual), 1.5311096254185517, 0.0, 1.0
+(156.5<TempMediaAnual), -2.2330449993378223, 0.0, 1.0
+(793.5<PrecipAnual), 0.25056393811723593, 0.0, 1.0
+(27.5<TemoMinMesMasFrio), -1.9430802272039118, 0.0, 1.0
+(310.5<TempMesMasCalido), 2.39482187224322, 0.0, 1.0
+(315.5<TempMesMasCalido), -1.864792196168106, 0.0, 1.0
+(297.5<PrecTrimHumedo), -1.2113413067003302, 0.0, 1.0
+(778.5<RadiacionFotActIncidenteAnual), 0.15064338306324926, 0.0, 1.0
+(48.5<IndiceProdSuelo), 0.030569441910528385, 0.0, 1.0
+`PrecipAnual, -0.8042343949813769, 0.0, 793.5
+(150.5<TempMediaAnual), 0.1689348247761944, 0.0, 1.0
+`PrecipAnual, -1.927463828958782, 0.0, 794.5
+(270.5<PrecTrimHumedo), 0.19808427083426308, 0.0, 1.0
+`TemoMinMesMasFrio, -6.374115362700008, 0.0, 24.5
+(314.5<TempMesMasCalido), 0.07767970963218851, 0.0, 1.0
+(26.5<TemoMinMesMasFrio), -0.013689299451992763, 0.0, 1.0
+'TempMediaAnual, -1.4099407385789666, 154.5, 235.0
+`CVPrecAnual, -0.8887104955171258, 0.0, 39.5
+'TempMediaAnual, -0.533942592069092, 153.5, 235.0
+linearPredictorNormalizer, 4.759756271201363
+densityNormalizer, 244.23467154511056
+numBackgroundPoints, 10247
+entropy, 5.713319734770567
